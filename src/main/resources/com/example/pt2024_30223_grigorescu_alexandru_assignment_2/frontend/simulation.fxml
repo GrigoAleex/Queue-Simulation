@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #3E1348;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pt2024_30223_grigorescu_alexandru_assignment_2.frontend.controllers.SimulationController">
+   <padding>
+      <Insets left="32.0" right="32.0" top="32.0" />
+   </padding>
+   <children>
+      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Simulation" wrappingWidth="105.609375">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ScrollPane fx:id="scrollPane" prefHeight="678.0" prefWidth="736.0" styleClass=".scroll-pane" stylesheets="@../../../../style.css">
+        <content>
+          <AnchorPane maxHeight="458.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="458.0" prefWidth="736.0" style="-fx-border-style: none;">
+               <children>
+                  <HBox fx:id="simulationFrame" maxWidth="1.7976931348623157E308" prefHeight="531.0" prefWidth="736.0" style="-fx-background-color: #320F3A; -fx-border-radius: 10;">
+                     <children>
+                        <VBox fx:id="registerComponent1" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="93.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../cash_registter.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox fx:id="clientComponent1" alignment="CENTER" prefHeight="85.0" prefWidth="121.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../man.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="4.0" top="16.0" />
+                                       </VBox.margin>
+                                    </StackPane>
+                                    <ProgressBar prefWidth="75.0" progress="0.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="registerComponent11" alignment="TOP_CENTER" layoutX="131.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="93.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../cash_registter.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox fx:id="clientComponent11" alignment="CENTER" prefHeight="85.0" prefWidth="121.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../man.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="4.0" top="16.0" />
+                                       </VBox.margin>
+                                    </StackPane>
+                                    <ProgressBar prefWidth="75.0" progress="0.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="registerComponent11111111111" alignment="TOP_CENTER" layoutX="1220.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="93.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../cash_registter.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox fx:id="clientComponent11111111111" alignment="CENTER" prefHeight="85.0" prefWidth="121.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../man.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="4.0" top="16.0" />
+                                       </VBox.margin>
+                                    </StackPane>
+                                    <ProgressBar prefWidth="75.0" progress="0.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+         <VBox.margin>
+            <Insets bottom="16.0" top="16.0" />
+         </VBox.margin>
+      </ScrollPane>
+      <HBox alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="736.0">
+         <children>
+            <Button fx:id="previousButton" maxHeight="28.0" maxWidth="28.0" minHeight="28.0" minWidth="28.0" mnemonicParsing="false" onAction="#previous" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../left_button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="playButton" maxHeight="28.0" maxWidth="28.0" minHeight="28.0" minWidth="28.0" mnemonicParsing="false" onAction="#play" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../play_button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="pauseButton" layoutX="38.0" layoutY="19.0" maxHeight="28.0" maxWidth="28.0" minHeight="28.0" minWidth="28.0" mnemonicParsing="false" onAction="#pause" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView disable="true" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../pause.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="nextButton" layoutX="64.0" layoutY="10.0" maxHeight="28.0" maxWidth="28.0" minHeight="28.0" minWidth="28.0" mnemonicParsing="false" onAction="#next" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../right_button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../time.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="555.0" />
+               </HBox.margin>
+            </ImageView>
+            <Text fx:id="timeText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="RIGHT" wrappingWidth="45.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets bottom="16.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

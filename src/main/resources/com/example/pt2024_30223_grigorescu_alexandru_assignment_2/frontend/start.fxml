@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+      prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.pt2024_30223_grigorescu_alexandru_assignment_2.frontend.controllers.StartController">
+
+   <VBox alignment="CENTER_LEFT" prefHeight="600.0" prefWidth="519.0">
+      <padding>
+         <Insets left="36.0" right="36.0"/>
+      </padding>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Marketplace Simulator x2000">
+         <font>
+            <Font name="Poppins Bold" size="28.0"/>
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Simulate your shop. Optimize queues.">
+         <font>
+            <Font size="16.0"/>
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="# OF CLIENTS">
+         <font>
+            <Font name="Poppins Bold" size="10.0"/>
+         </font>
+         <VBox.margin>
+            <Insets top="32.0"/>
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="clients">
+         <VBox.margin>
+            <Insets top="4.0"/>
+         </VBox.margin>
+      </TextField>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="# OF QUEUES">
+         <font>
+            <Font name="Poppins Bold" size="10.0"/>
+         </font>
+         <VBox.margin>
+            <Insets top="16.0"/>
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="queues"/>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SIMULATION TIME">
+         <font>
+            <Font name="Poppins Bold" size="10.0"/>
+         </font>
+         <VBox.margin>
+            <Insets top="16.0"/>
+         </VBox.margin>
+      </Text>
+      <TextField fx:id="simulation_time"/>
+      <HBox alignment="CENTER" prefHeight="53.0" prefWidth="368.0">
+         <VBox alignment="CENTER_LEFT" maxWidth="210.0" prefHeight="55.0" prefWidth="224.0">
+            <HBox.margin>
+               <Insets right="8.0"/>
+            </HBox.margin>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MINIMUM ARRIVAL TIME">
+               <font>
+                  <Font name="Poppins Bold" size="10.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets top="16.0"/>
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="arrival_time_min" prefHeight="25.0" prefWidth="195.0"/>
+         </VBox>
+         <VBox alignment="CENTER_LEFT" maxWidth="210.0" prefHeight="64.0" prefWidth="210.0">
+            <HBox.margin>
+               <Insets left="8.0"/>
+            </HBox.margin>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MAXIMUM ARRIVAL TIME">
+               <font>
+                  <Font name="Poppins Bold" size="10.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets top="16.0"/>
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="arrival_time_max" maxWidth="270.0" prefHeight="25.0" prefWidth="270.0"/>
+         </VBox>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="53.0" prefWidth="368.0">
+         <VBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="210.0">
+            <HBox.margin>
+               <Insets right="8.0"/>
+            </HBox.margin>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MINIMUM SERVICE TIME">
+               <font>
+                  <Font name="Poppins Bold" size="10.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets top="16.0"/>
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="service_time_min" prefHeight="26.0" prefWidth="184.0"/>
+         </VBox>
+         <VBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="210.0">
+            <HBox.margin>
+               <Insets left="8.0"/>
+            </HBox.margin>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MAXIMUM SERVICE TIME">
+               <font>
+                  <Font name="Poppins Bold" size="10.0"/>
+               </font>
+               <VBox.margin>
+                  <Insets top="16.0"/>
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="service_time_max"/>
+         </VBox>
+      </HBox>
+      <Text fx:id="error" fill="#e64c4c" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="425.09798431396484">
+         <font>
+            <Font name="Poppins Bold" size="14.0"/>
+         </font>
+         <VBox.margin>
+            <Insets top="12.0"/>
+         </VBox.margin>
+      </Text>
+      <Button accessibleHelp="hrlp" accessibleText="dsa" alignment="CENTER" defaultButton="true"
+              mnemonicParsing="false" onAction="#submit" prefHeight="30.0" prefWidth="438.0"
+              style="-fx-font-size: 8; -fx-font-weight: bold; -fx-font-family: &quot;Poppins&quot;; -fx-background-color: #2D7ECD;"
+              text="START SIMULATION" textAlignment="CENTER" textFill="WHITE">
+         <VBox.margin>
+            <Insets top="24.0"/>
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="10.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Button>
+   </VBox>
+   <ImageView fitHeight="600.0" fitWidth="526.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../../login_background.png"/>
+   </ImageView>
+</HBox>
